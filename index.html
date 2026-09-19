@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Course Registration Interface</title>
+</head>
+<body>
+    <!-- Header section with logo and navigation -->
+   <header id="header">
+    <div class="logo">
+        <h1 id="logo-text">Course Registration</h1>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+   </nav>
+   </header>
+   <!-- Main content area -->
+<main class="form-container">
+    <h2>Register for Courses</h2>
+
+    <!-- Registration form -->
+    <form action="#" method="POST" id="registration-form">
+       <!-- Input field for student name -->
+        <div class="form-group">
+            <label for="student-name">Full Name:</label>
+            <input type="text" id="student-name" name="student-name" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Input field for student ID -->
+        <div class="form-group">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" required>
+        </div>
+        <!-- Input field for programme -->
+        <div class="form-group">
+            <label for="programme">Programme</label>
+            <select name="programme" id="programme" required>
+                <option value="" disabled selected>Select your programme</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="physics">Physics</option>
+            </select>
+        </div>
+
+        <!-- Input field for course selection -->
+        <div class="form-group">
+            <label for="course-selection">Select Courses:</label>
+            <select name="course-selection" id="course-selection"  required>
+                <option value="" disabled selected>Select the courses you want to register for</option>
+                <option value="cs101">CS101 - Introduction to Programming</option>
+                <option value="cs102">CS102 - Data Structures</option>
+                <option value="math101">MATH101 - Calculus I</option>
+                <option value="phys101">PHYS101 - General Physics</option>
+            </select>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="submit-btn">Register</button>
+    </form>
+</main>
+<footer class="site-footer">
+    <div class="footer-container">
+        <p>&copy; 2026 Course Registration Interface. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

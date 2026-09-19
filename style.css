@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* Ensure the body takes up the full height of the viewport */
+main {
+    flex: 1 0 auto;
+}
+
+/* navigation container*/
+#header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #4fd2db;
+   padding: 1rem 2rem;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
+/*navigation logo*/
+.logo {
+   font-size: small;
+   color: #fff;
+   font-weight: 800;
+   letter-spacing: 1px;
+}
+
+/*navigation links container*/
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*individual anchor links*/
+.nav-links a {
+    text-decoration: none;
+    color: #0e0000;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    transition: color 0.3s ease;
+}
+
+/*hover effect for anchor links*/
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* Form container styling */
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Input and select field styling */
+.form-group input,
+.form-group select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4fd2db;
+    background-color: #fff;
+}   
+
+
+button {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background-color: #4fd2db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3bb0b7;
+}
+
+/* Footer styling */
+.site-footer {
+    flex-shrink: 0;
+    background-color: #4fd2db;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d1f0f5;
+}
